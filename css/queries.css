@@ -1,0 +1,306 @@
+/* BELOW 1344PX (SMALLER SESKTOPS) */
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .testimonials-imgs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* BELOW 1200PX (TABLETS) */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 59%;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .header {
+    padding: 0 3.2rem;
+  }
+  .hero {
+    gap: 4.8rem;
+  }
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+  .testimonials-first-part {
+    padding: 9.6rem 3.2rem;
+  }
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+}
+
+/* BELOW 1000PX (SMALL TABLETS) */
+
+@media (max-width: 62em) {
+  html {
+    font-size: 50%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+  }
+  .hero-img {
+    width: 50%;
+  }
+  .delivered-meals,
+  .hero-image-box {
+    display: flex;
+    justify-content: center;
+  }
+  .delivered-meals {
+    margin-top: 3.2rem;
+  }
+  .hero-text-box {
+    text-align: center;
+    padding: 0 8rem;
+  }
+  .features-logos img {
+    height: 2.4rem;
+  }
+  .step-number {
+    font-size: 7.4rem;
+  }
+  .meal-description {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+  .testimonials-imgs {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .testimonials-section {
+    grid-template-columns: 1fr;
+  }
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .form-btn {
+    margin-top: 1.2rem;
+  }
+
+  /* MOBILE NAVIGATION  */
+
+  .btn-moblie-nav {
+    display: block;
+  }
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.972);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.5s ease-in;
+    transform: translate(100%, 0);
+
+    opacity: 0%;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .main-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 4.8rem;
+  }
+  .main-nav-list .main-nav-btn {
+    color: rgb(71, 69, 69);
+    font-size: 3.2rem;
+  }
+  .main-nav-list .main-nav-btn-last {
+    font-size: 3rem;
+  }
+  .nav-open .main-nav {
+    transform: translate(0, 0);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+  .nav-open .icon-moblie-nav[name="menu-outline"] {
+    display: none;
+  }
+  .nav-open .icon-moblie-nav[name="close-outline"] {
+    display: block;
+  }
+}
+
+/* BELOW 704PX (SMALLER TABLETS) */
+
+@media (max-width: 44em) {
+  .grid--3--cols,
+  .grid--4--cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .deit-list {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+  .price-section {
+    padding: 8.6rem;
+  }
+  .footer {
+    padding: 6.8rem 0;
+  }
+  .cta-text-box {
+    padding: 3.8rem 5.4rem 5.4rem 5.4rem;
+  }
+  .price-carts {
+    width: 100%;
+    gap: 4rem;
+  }
+  .plan-sign-up a {
+    width: 100%;
+  }
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .logo-col,
+  .address-col {
+    grid-row: 2;
+    grid-column: span 3;
+  }
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+  .meal-title {
+    font-size: 2rem;
+  }
+}
+
+/* BELOW 550PX (PHONES)  */
+
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+  .grid--3--cols,
+  .grid--4--cols,
+  .grid--2--cols {
+    grid-template-columns: 1fr;
+  }
+  .hero-text-box {
+    padding: 0;
+  }
+  .section-how {
+    padding: 0;
+  }
+  .features-logos img {
+    height: 1.2rem;
+  }
+  .features-section {
+    padding: 4.8rem 0;
+  }
+  .hero-img {
+    width: 86%;
+  }
+  .section-hero {
+    background-color: #fdf2e9;
+    padding: 2.4rem 0 4.8rem 0;
+  }
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-text-box:nth-child(5) {
+    grid-row: 6;
+  }
+  .step-paragraph {
+    margin-bottom: 0rem;
+  }
+  .how-it-work-grid {
+    row-gap: 0rem;
+  }
+  .step-text-box {
+    margin-bottom: 4.8rem;
+  }
+  .testimonials-imgs {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-img-box {
+    height: 36rem;
+    grid-row: 1;
+    background-size: 100% 100%;
+  }
+  .cta-text {
+    margin-bottom: 3.2rem;
+  }
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+}
+
+/* FIXING SAFARI FLEXBOX GAP  */
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
